@@ -1,0 +1,691 @@
+/*
+-----------------------------------------------------------------------
+* Template Name    : Himton | Responsive Bootstrap 4 Landing Template * 
+* Author           : ThemesBoss                                        *
+* Version          : 1.0.0                                            *
+* Created          : March 2018                                       *
+* File Description : Main Css file of the template                    *
+*----------------------------------------------------------------------
+*/
+
+/***********************
+    1.BASIC           
+    2.HELPER
+    3.NAVBAR
+    4.HOME
+    5.SERVICE
+    6.FEATURES
+    7.CTA SECTION
+    8.TESTIMONIAL
+    9.TRUSETED CLIENTS
+    10.PRICE BOX
+    11.FAQ
+    12.CONTACT
+    13.FOOTER
+    14.RESPONSIVE
+************************/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Quattrocento+Sans:400,700');
+/*======================
+        1.BASIC
+========================*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+::selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+
+::-moz-selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+
+/*==========================
+        2.HELPER
+============================*/
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    background-color: #fff;
+}
+
+.bg-dark{
+    background-color: #000;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-custom {
+    color: #ff546c;
+}
+
+.text-danger {
+    color: #E64236
+}
+
+.text-green {
+    color: #33D287;
+}
+
+.text-blue {
+    color: #4285F3;
+}
+
+.text-yellow {
+    color: #FCBB03;
+}
+
+.text-purple {
+    color: #5859FE;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.z-index {
+    z-index: 2;
+}
+
+.bg-custom {
+    background-color: #ff546c;
+}
+
+.bg-dark {
+    background-color: #1d1f25 !important;
+}
+
+.section-main-title {
+    max-width: 570px;
+}
+
+.main-title-border::after,
+.main-title-border::before {
+    display: inline-block;
+    margin-top: -7px;
+    vertical-align: middle;
+    content: "";
+    background-color: #d0d0d0;
+    width: 30px;
+    height: 1px;
+}
+
+.main-title-border i {
+    font-size: 20px;
+}
+
+.section-main-title p {
+    max-width: 600px;
+}
+
+.bg-overlay-gredient {
+    background: linear-gradient(32deg, rgba(18, 166, 181, 0.8) 0%, rgba(16, 12, 242, 0.7) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    padding: 12px 26px;
+}
+
+.btn-rounded {
+    border-radius: 30px;
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:focus,
+.btn-outline-custom:active,
+.btn-outline-custom.active,
+.btn-outline-custom.focus,
+.btn-outline-custom:active,
+.btn-outline-custom:focus,
+.btn-outline-custom:hover,
+.open>.dropdown-toggle.btn-outline-custom {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #000 !important;
+}
+
+.btn-custom {
+    background-color: #ff546c;
+    border: 2px solid #ff546c;
+    color: #fff;
+    transition: all 0.5s;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open>.dropdown-toggle.btn-custom {
+    background-color: #e6475e;
+    border-color: #e6475e;
+    color: #f3f3f3;
+}
+
+.vertical-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+/*==========================
+        3.NAVBAR
+============================*/
+
+.custom-nav {
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+    background-color: #fff;
+    top: -100px;
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .1);
+}
+
+.custom-nav .navbar-nav li a {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 16px;
+    background-color: transparent !important;
+    padding: 15px 0;
+    margin: 0 7px;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+.navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.custom-nav .navbar-nav li.active a,
+.custom-nav .navbar-nav li a:hover,
+.custom-nav .navbar-nav li a:active {
+    color: #000 !important;
+}
+
+.navbar-toggle {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.custom-nav .btn-custom {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: transparent;
+    border-color: #337ab7;
+}
+
+.custom-nav .navbar-brand.logo img {
+    height: 30px;
+}
+
+/*==========================
+        4.HOME
+============================*/
+
+.home-bg {
+    background-image: url(../images/home-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.home-table-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.header_btn span {
+    position: relative;
+    top: 14px;
+}
+
+.header_title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.header_subtitle {
+    line-height: 2.0;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+/*----HOME 2----*/
+
+.home-half{
+    padding: 180px 0px !important;
+}
+
+/*----Home 9/10----*/
+
+.home-bg-gredient {
+    background: linear-gradient(32deg, rgb(18, 166, 181) 0%, rgb(16, 12, 242) 100%);
+}
+
+/*----Home 21/22---*/
+
+.home-slider .carousel-control-next,
+.carousel-control-prev {
+    width: 6%;
+}
+
+.home-slider .carousel-item {
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.home-slider .carousel-item,
+.home-slider .carousel {
+    width: 100%;
+}
+
+/*==========================
+        5.SERVICES
+============================*/
+
+.lan_box_ser {
+    box-shadow: 0px 0px 20px 3px rgba(4, 6, 4, 0.04);
+}
+
+.lan_box_ser .ser_icon i {
+    font-size: 42px;
+}
+
+/*===========================
+        6.FEATURES
+=============================*/
+
+.lan_features_box .lan_features_icon i {
+    font-size: 44px;
+    color: #ff546c;
+}
+
+.lan_features_box .lan_features_content .lan_features_subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 480px;
+}
+
+.lan_features_box .lan_features_border {
+    height: 2px;
+    background: #ff546c;
+    width: 60px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/*==========================
+        7.CTA SECTION
+============================*/
+
+.cta-desc {
+    max-width: 635px;
+}
+
+.free-trial-form .form-control {
+    height: 50px;
+    box-shadow: none;
+}
+
+.free-trial-form .form-control:focus {
+    border-color: #ff546c;
+}
+
+/*==========================
+        8.TESTIMONIAL
+============================*/
+
+.testi_boxes {
+    max-width: 900px;
+}
+
+.client_review {
+    font-size: 20px;
+}
+
+.client_name {
+    font-size: 16px;
+}
+
+.testi_boxes .tam_testi_icon {
+    font-size: 50px;
+}
+
+.owl-theme .owl-controls .owl-page {
+    margin: 20px 0px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 6px;
+    margin: 5px 4px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    background: #ff546c;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    width: 20px;
+}
+
+/*==========================
+        9.TRUSETED CLIENTS
+============================*/
+
+.logo_img img {
+    max-height: 100px;
+    width: auto !important;
+}
+
+/*==========================
+        10.PRICE BOX
+============================*/
+
+.price_border_box {
+    padding: 40px;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.price_border_box.active {
+    position: relative;
+    overflow: hidden;
+    border-color: #ff546c;
+}
+
+.price_border_box.active .lable {
+    background: #ff546c;
+    padding: 8px 0;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    top: 22px;
+    right: -60px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.price_border_box.active .lable h6 {
+    color: #fff;
+    font-size: 14px;
+}
+
+.price_border_box .lan-price h1 sup,
+.price_border_box .lan-price h1 sub {
+    font-size: 26px;
+}
+
+.price_border_box .lan-price h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 49px;
+}
+
+.price_border_box .lan-price h1 sup {
+    position: relative;
+    top: -15px;
+}
+
+.price_border_box .lan_price_feat {
+    padding: 40px 0px;
+}
+
+.price_border_box .lan_price_feat p {
+    font-size: 15px;
+    color: #777;
+}
+
+/*==========================
+        11.FAQ
+============================*/
+
+.faq-boxes {
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.faq-boxes:hover h5 {
+    color: #ff546c;
+}
+
+.faq-boxes h5 {
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+/*==========================
+        12.CONTACT
+============================*/
+
+.custom-form .form-control {
+    box-shadow: none !important;
+    height: 50px;
+    border: none;
+    background: #f8f9fa;
+}
+
+.custom-form .form-control:focus {
+    border-color: #ff546c;
+}
+
+.custom-form textarea.form-control {
+    height: auto;
+}
+
+/*==========================
+        13.FOOTER
+============================*/
+
+.footer_detail .fot_social .social-icon {
+    border: 2px solid #868e96;
+    border-radius: 50%;
+    transition: all 0.5s;
+    width: 42px;
+    height: 42px;
+    display: block;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.footer_detail .fot_social .social-icon:hover {
+    border-color: #ff546c;
+    color: #ff546c !important;
+}
+
+.footer_detail .footer_menu li a {
+    font-weight: 500;
+}
+
+.footer_detail .footer_menu li a:hover {
+    color: #000 !important;
+    transition: all 0.5s;
+}
+
+.footer_detail .footer_menu li::after {
+    content: "|";
+    margin: 0 20px;
+    color: #757575;
+}
+
+.footer_detail .footer_menu li:last-child:after {
+    content: "";
+}
+
+.footer_detail .footer_logo {
+    height: 34px;
+}
+
+.footer_detail .copy-rights {
+    line-height: 43px;
+}
+
+.footer_detail .fot_bor {
+    height: 2px;
+    background: #e9e9e9;
+    width: 100%;
+}
+
+/*==========================
+        14.RESPONSIVE
+============================*/
+
+@media (max-width: 768px) {
+    .custom-nav {
+        margin-top: 0px;
+        padding: 10px 0px !important;
+        background-color: #fff !important;
+        top: -50000px;
+    }
+    .custom-nav .navbar-nav li a {
+        margin: 0 0px;
+        padding: 6px 0;
+    }
+    .custom-nav>.container {
+        width: 90%;
+    }
+    .navbar-nav {
+        margin-top: 0px;
+    }
+    .navbar-toggler {
+        font-size: 29px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #000;
+    }
+    .header_title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .header_subtitle {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    .price_border_box.active {
+        transform: scale(1.0);
+    }
+    .vertical-content {
+        display: inherit;
+    }
+    .h-100vh {
+        height: auto;
+    }
+    .header_btn span {
+        display: block;
+    }
+    .home-half {
+        padding: 140px 0 100px 0 !important;
+    }
+    .custom-nav .navbar-brand.logo img {
+        height: 26px;
+    }
+    .copy-rights {
+        line-height: 26px;
+    }
+    .footer_menu li::after {
+        display: none;
+    }
+    .footer_menu li {
+        display: block;
+    }
+    .float_none.float-right,
+    .float_none.float-left {
+        float: none !important;
+        text-align: center;
+    }
+    .home-half{
+        padding: 60px 0px !important;
+    }
+}
