@@ -72,6 +72,31 @@ button:focus {
     position: relative;
     background-color: #fff;
 }
+.clipfreecopy {
+    width: 50px;
+    border: 3px solid #FFD62C;
+    height: 50px;
+    top: 240px;
+}
+.clipfreecopy {
+    width: 60px;
+    border: 3px solid #FFD62C;
+    height: 60px;
+}
+
+.clipfreecopy {
+    width: 60px;
+    border: 5px solid #FFD62C;
+    border-radius: 40px;
+    height: 60px;
+    position: fixed;
+    top: 300px;
+    cursor: pointer;
+    right: 20px;
+    z-index: 10;
+}
+
+
 
 .bg-dark{
     background-color: #000;
